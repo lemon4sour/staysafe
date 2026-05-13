@@ -1,0 +1,62 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout pageTitle={frontmatter.title}>
+  <p>Published on: {frontmatter.pubDate.toLocaleDateString()}</p>
+  <p>Written by {frontmatter.author}</p>
+
+  <div class="tags">
+    {
+      frontmatter.tags.map((tag: string) => (
+        <p class="tag">
+          <a href={`/tags/${tag}`}>{tag}</a>
+        </p>
+      ))
+    }
+  </div>
+  <main class="markdown">
+    <slot />
+  </main>
+</BaseLayout>
+<style>
+  a {
+    color: #00539f;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .markdown :global(p) {
+    text-indent: 2em;
+  }
+
+  .markdown :global(p:has(img, video, iframe)) {
+    text-indent: 0;
+  }
+
+  .markdown :global(img),
+  .markdown :global(video),
+  .markdown :global(iframe) {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .markdown :global(iframe[src*="youtube.com/embed"]) {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+  }
+
+  .tag {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    font-size: 1.15em;
+    background-color: #f8fcfd;
+  }
+</style>
