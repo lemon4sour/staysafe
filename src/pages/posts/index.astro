@@ -6,6 +6,9 @@ const allPosts = await getCollection("posts")
 ---
 
 <BaseLayout pageTitle="Posts">
+  <p>
+    Scams are something everyone encounters. You can view individual scams by scrolling down below and clicking on the links for more details about them. 
+  </p>
   <ul>
     {
     allPosts.map((post: any) => (

@@ -4,8 +4,8 @@ tags:
   - discord
   - scam
 title: Steam Support Scam
-author: TheCakeIsALie
-pubDate: 2025-06-28
+author: Rolimon's Community
+pubDate: 2026-12-05
 ---
 A user will DM you on either Discord or Steam in an urgent matter. They will claim that they have reported you and had their friends report you, and that your Steam account is now at risk of getting banned unless you contact a Valve employee. 
 
