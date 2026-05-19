@@ -1,19 +1,20 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import BlogPost from "../../components/BlogPost.astro"
-const allPosts = await getCollection("posts")
+import BlogPost from "../../components/BlogPost.astro";
+const allPosts = await getCollection("posts");
 ---
 
 <BaseLayout pageTitle="Posts">
   <p>
-    Scams are something everyone encounters. You can view individual scams by scrolling down below and clicking on the links for more details about them. 
+    Scams are something everyone encounters. You can view individual scams by
+    scrolling down below and clicking on the links for more details about them.
   </p>
   <ul>
     {
-    allPosts.map((post: any) => (
-    <BlogPost url={`/posts/${post.id}/`} title={post.data.title} />
-    ))
+      allPosts.map((post: any) => (
+        <BlogPost url={`/posts/${post.id}/`} title={post.data.title} />
+      ))
     }
   </ul>
 </BaseLayout>

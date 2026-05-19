@@ -6,7 +6,10 @@ import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 // Define a `loader` and `schema` for each collection
 const posts = defineCollection({
-  loader: glob({ pattern: "**/[^_]*.md", base: "./src/content/StaySafe/posts" }),
+  loader: glob({
+    pattern: "**/[^_]*.md",
+    base: "./src/content/StaySafe/posts",
+  }),
   schema: z.object({
     title: z.string(),
     pubDate: z.coerce.date(),
