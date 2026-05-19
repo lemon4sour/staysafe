@@ -1,8 +1,9 @@
 ---
 tags:
   - discord
-  - scam
   - steam
+  - malware
+  - phishing
 title: Discord/Steam Giftcard Scam
 author: Rolimon's Community
 pubDate: 2026-02-19
@@ -14,4 +15,4 @@ You can avoid this by checking what links are by hovering over them to make sure
 
 ![697](../images/fake_steam_gift.png)
 
-![](../images/fake_nitro_1.png)
+![](../images/bad_link_1.png)

@@ -1,8 +1,8 @@
 ---
 tags:
   - roblox
-  - scam
   - trading
+  - scam
 title: Malicious Verification Bot RAT
 author: Rolimon's Community
 pubDate: 2026-02-26

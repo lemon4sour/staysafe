@@ -2,6 +2,7 @@
 tags:
   - discord
   - scam
+  - phishing
 title: Fake Discord Nitro Giveaway/Gift
 author: Rolimon's Community
 pubDate: 2026-02-19
@@ -13,4 +14,4 @@ You can avoid this by always checking that the gift you received is legitimate, 
 
 ![](../images/fake_nitro.png)
 
-![](../images/fake_nitro_1.png)
+![](../images/bad_link_1.png)

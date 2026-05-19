@@ -3,6 +3,7 @@ tags:
   - info
   - trading
   - roblox
+  - email
 title: Deceptive Users targets users by email to sell items for way below market value
 author: Rolimon's Community
 pubDate: 2026-02-17
